@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "removeComments": true,
+    "outDir": "./bin",
+    "watch": true,
+    "experimentalDecorators": true,
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

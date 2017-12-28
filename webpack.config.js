@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './src/index.ts',
+  entry: './src/index.tsx',
   output: {
     filename: 'bundle.js',
     path: __dirname + '/dist'
@@ -10,7 +10,7 @@ module.exports = {
 
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions
-    extensions: ['.webpack.js', '.web.js', '.ts', 'tsx', '.js']
+    extensions: ['.webpack.js', '.web.js', '.ts', '.tsx', '.js']
   },
 
   module: {
@@ -23,10 +23,12 @@ module.exports = {
     ]
   },
 
-    // When importing a module whose path matches one of the following, just
-    // assume a corresponding global variable exists and use that instead.
-    // This is important because it allows us to avoid bundling all of our
-    // dependencies, which allows browsers to cache those libraries between builds.
+  // When importing a module whose path matches one of the following, just
+  // assume a corresponding global variable exists and use that instead.
+  // This is important because it allows us to avoid bundling all of our
+  // dependencies, which allows browsers to cache those libraries between builds.
+
+  // 也就是说如果在这里存在，那么html页面就必须显示引入那些依赖
   externals: {
       "react": "React",
       "react-dom": "ReactDOM"

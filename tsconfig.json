@@ -9,8 +9,12 @@
     "noImplicitAny": true,
     "experimentalDecorators": true,
     "allowJs": true,
+    "jsx": "react",
   },
   "include": [
     "src/**/*"
+  ],
+  "exclude": [
+    "src/basicSyntax/*"
   ]
 }

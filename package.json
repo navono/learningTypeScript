@@ -4,16 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack"
+    "build-basic": "cd ./src/basicSyntax && tsc ",
+    "dev-basic": "node ./src/basicSyntax/bin/index.js",
+    "dev-react": "webpack"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "TypeScript",
+    "React"
+  ],
+  "author": "Qixing Ping",
   "license": "ISC",
   "devDependencies": {
     "awesome-typescript-loader": "^3.4.1",
     "source-map-loader": "^0.2.3",
     "typescript": "^2.6.2",
     "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "@types/react": "^16.0.31",
+    "@types/react-dom": "^16.0.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   }
 }

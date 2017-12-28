@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-basic": "cd ./src/basicSyntax && tsc ",
-    "dev-basic": "node ./src/basicSyntax/bin/index.js",
+    "build-basic": "cd ./src/typescript101 && tsc ",
+    "dev-basic": "node ./src/typescript101/bin/index.js",
     "dev-react": "webpack"
   },
   "keywords": [

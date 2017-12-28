@@ -1,4 +1,4 @@
-export function log() {
+export function Log() {
   return (target: Object, 
     propertyKey: string, 
     descriptor: TypedPropertyDescriptor<any>) => {
